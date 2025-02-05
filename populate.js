@@ -15,11 +15,11 @@ const upload = async () => {
       console.log(productAPI);
       console.log("products uploaded successfully");
     } catch (creationError) {
-      console.error("error uploading products", creationError);
+      console.log("error uploading products", creationError);
     }
     process.exit(0);
   } catch (error) {
-    console.error("error ", error.message);
+    console.log("error ", error.message);
     console.log("unable to connect");
 
     process.exit(1);
